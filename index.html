@@ -1,12 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Мій сайт</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дриль електричний NARVA NID-900</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f8f8; color: #333; }
+    .container { max-width: 800px; margin: auto; background: white; padding: 20px; }
+    h1 { color: #c00; }
+    .product-image { max-width: 100%; height: auto; }
+    .price { font-size: 24px; color: #008000; font-weight: bold; margin-top: 10px; }
+    .btn { padding: 10px 20px; margin: 5px 0; background: #005bbb; color: white; border: none; cursor: pointer; border-radius: 4px; }
+    .btn:hover { background: #004499; }
+    .form-group { margin-bottom: 10px; }
+    input, textarea { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+    .features, .delivery { margin-top: 20px; }
+    .features table { width: 100%; border-collapse: collapse; }
+    .features th, .features td { text-align: left; padding: 8px; border-bottom: 1px solid #ccc; }
+  </style>
 </head>
 <body>
-  <h1>Привіт, світ!</h1>
-  <p>Це мій перший сайт на GitHub Pages</p>
+  <div class="container">
+    <h1>Дриль електричний NARVA NID-900</h1>
+    <img class="product-image" src="https://via.placeholder.com/500x300?text=Фото+дриля" alt="Drill Image">
+    <div class="price">890 грн</div>
+
+    <button class="btn">Купити</button>
+    <div>
+      <input type="text" placeholder="Введіть номер телефону">
+      <button class="btn">Купити в 1 клік</button>
+    </div>
+
+    <div class="delivery">
+      <h3>Способи доставки</h3>
+      <ul>
+        <li>Самовивіз з відділення "Нової Пошти"</li>
+        <li>Кур'єр "Нової Пошти"</li>
+        <li>Самовивіз з магазину</li>
+        <li>Надсилання щодня до 14:00, крім неділі</li>
+      </ul>
+    </div>
+
+    <div class="features">
+      <h3>Характеристики</h3>
+      <table>
+        <tr><th>Напруга</th><td>220В</td></tr>
+        <tr><th>Максимальна потужність, Вт</th><td>900</td></tr>
+        <tr><th>Тип двигуна</th><td>Електро</td></tr>
+        <tr><th>Тип патрона</th><td>Ключовий патрон</td></tr>
+        <tr><th>Наявність удару</th><td>є</td></tr>
+        <tr><th>Гарантія</th><td>12 міс.</td></tr>
+      </table>
+    </div>
+
+    <h3>Залишити заявку</h3>
+    <form>
+      <div class="form-group">
+        <input type="text" placeholder="Ваше ім'я">
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Ваш email">
+      </div>
+      <div class="form-group">
+        <input type="tel" placeholder="Ваш телефон">
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Коментар або питання"></textarea>
+      </div>
+      <button type="submit" class="btn">Надіслати</button>
+    </form>
+  </div>
 </body>
 </html>
