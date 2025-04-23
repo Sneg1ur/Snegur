@@ -4,11 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Дриль електричний NARVA NID-900</title>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MJG3857X');
+  </script>
+  <!-- End Google Tag Manager -->
+
   <style>
+    * { box-sizing: border-box; }
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f8f8; color: #333; }
     .container { max-width: 800px; margin: auto; background: white; padding: 20px; }
     h1 { color: #c00; }
-    .product-image { max-width: 100%; height: auto; }
+    .product-image { max-width: 100%; height: auto; cursor: pointer; }
     .price { font-size: 24px; color: #008000; font-weight: bold; margin-top: 10px; }
     .btn { padding: 10px 20px; margin: 5px 0; background: #005bbb; color: white; border: none; cursor: pointer; border-radius: 4px; }
     .btn:hover { background: #004499; }
@@ -17,23 +29,30 @@
     .features, .delivery { margin-top: 20px; }
     .features table { width: 100%; border-collapse: collapse; }
     .features th, .features td { text-align: left; padding: 8px; border-bottom: 1px solid #ccc; }
-    footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center; font-size: 16px; }
-    footer a { color: #005bbb; text-decoration: none; }
+    .contact { margin-top: 30px; padding-top: 20px; border-top: 1px solid #ccc; }
+    a { color: #005bbb; text-decoration: none; cursor: pointer; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Дриль електричний NARVA NID-900</h1>
-    <img class="product-image" src="drill.jpg" alt="Дриль NARVA NID-900">
-    <div class="price">890 грн</div>
 
-    <button class="btn">Купити</button>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJG3857X"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="container">
+    <h1 id="product-title">Дриль електричний NARVA NID-900</h1>
+    <img class="product-image" id="product-image" src="https://via.placeholder.com/500x300?text=Фото+дриля" alt="Drill Image">
+    <div class="price" id="product-price">890 грн</div>
+
+    <button class="btn" id="buy-button">Купити</button>
     <div>
-      <input type="text" placeholder="Введіть номер телефону">
-      <button class="btn">Купити в 1 клік</button>
+      <input type="text" placeholder="Введіть номер телефону" id="quick-phone">
+      <button class="btn" id="quick-buy-button">Купити в 1 клік</button>
     </div>
 
-    <div class="delivery">
+    <div class="delivery" id="delivery-info">
       <h3>Способи доставки</h3>
       <ul>
         <li>Самовивіз з відділення "Нової Пошти"</li>
@@ -43,7 +62,7 @@
       </ul>
     </div>
 
-    <div class="features">
+    <div class="features" id="product-features">
       <h3>Характеристики</h3>
       <table>
         <tr><th>Напруга</th><td>220В</td></tr>
@@ -56,29 +75,27 @@
     </div>
 
     <h3>Залишити заявку</h3>
-    <form>
+    <form id="lead-form">
       <div class="form-group">
-        <input type="text" placeholder="Ваше ім'я">
+        <input type="text" placeholder="Ваше ім'я" id="name-input">
       </div>
       <div class="form-group">
-        <input type="email" placeholder="Ваш email">
+        <input type="email" placeholder="Ваш email" id="email-input">
       </div>
       <div class="form-group">
-        <input type="tel" placeholder="Ваш телефон">
+        <input type="tel" placeholder="Ваш телефон" id="phone-input">
       </div>
       <div class="form-group">
-        <textarea placeholder="Коментар або питання"></textarea>
+        <textarea placeholder="Коментар або питання" id="comment-input"></textarea>
       </div>
-      <button type="submit" class="btn">Надіслати</button>
+      <button type="submit" class="btn" id="submit-button">Надіслати</button>
     </form>
-  </div>
 
-  <footer>
-    <p>Зв’язатися з нами:</p>
-    <p>
-      <a href="tel:+380685162456">📞 +38 (068) 516 24 56</a><br>
-      <a href="mailto:Sneg84@gmail.com">📧 Sneg84@gmail.com</a>
-    </p>
-  </footer>
+    <div class="contact" id="contact-section">
+      <h3>Контакти</h3>
+      <p><strong>Телефон:</strong> <a id="phone-link" href="tel:+380685162456">+380685162456</a></p>
+      <p><strong>Email:</strong> <a id="email-link" href="mailto:Sneg84@gmail.com">Sneg84@gmail.com</a></p>
+    </div>
+  </div>
 </body>
 </html>
