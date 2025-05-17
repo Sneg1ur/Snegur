@@ -9,6 +9,9 @@ header {
     background: #333;
     color: white;
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a {
@@ -18,35 +21,24 @@ nav a {
 }
 
 .banner {
-    background: #f4f4f4;
-    padding: 20px;
+    text-align: center;
+    padding: 30px;
 }
 
-.categories a {
-    display: block;
-    padding: 10px;
-    margin: 5px;
-    background: #ddd;
-    text-decoration: none;
-}
-
-.top-sales {
+.categories {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 15px;
+}
+
+.category {
+    background: #ddd;
+    padding: 10px;
+    text-align: center;
 }
 
 .product {
     border: 1px solid #ddd;
     padding: 10px;
 }
-
-.buy-btn {
-    background: #ff6600;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
