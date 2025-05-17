@@ -1,71 +1,57 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CAT Tools | Магазин електроінструментів</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; line-height: 1.6; background: #f9f9f9; color: #333; }
-    header { background: #111; color: white; padding: 1rem; text-align: center; }
-    nav { background: #222; color: white; display: flex; justify-content: center; padding: 0.5rem 0; gap: 2rem; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    .hero { padding: 2rem; background: #ffe600; text-align: center; }
-    .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-    .products { display: grid; grid-template-columns: 1fr; gap: 1.5rem; padding: 2rem; }
-    .product { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
-    .product img { max-width: 100%; border-radius: 8px; }
-    .product h2 { font-size: 1.2rem; margin: 0.5rem 0; }
-    .product .price { color: green; font-weight: bold; }
-    .footer { background: #222; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerBit - Головна</title>
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <header>
-    <h1>CAT Tools</h1>
-    <p>Магазин професійного електроінструменту</p>
-  </header>
+    <header>
+        <h1>PowerBit</h1>
+        <nav>
+            <a href="#">Головна</a>
+            <a href="#catalog">Каталог</a>
+            <a href="#top-sales">Топ продажів</a>
+            <a href="#contact">Контакти</a>
+        </nav>
+    </header>
 
-  <nav>
-    <a href="index.html">Головна</a>
-    <a href="shurupovert.html">Шуруповерт</a>
-    <a href="perforator.html">Перфоратор</a>
-    <a href="#dostavka">Доставка і оплата</a>
-    <a href="#kontakty">Контакти</a>
-  </nav>
+    <main>
+        <section class="banner">
+            <h2>Надійні інструменти для професіоналів</h2>
+            <p>Купуйте якісні шуруповерти, перфоратори, гайковерти та більше!</p>
+        </section>
 
-  <section class="hero">
-    <h1>Професійний інструмент за найкращими цінами</h1>
-    <p>Гарантія, сервіс і швидка доставка</p>
-  </section>
+        <section id="catalog">
+            <h2>Каталог товарів</h2>
+            <div class="categories">
+                <a href="products/drill_bits.html">Набори свердел та біт</a>
+                <a href="products/screwdrivers.html">Шуруповерти</a>
+                <a href="products/drills.html">Дрилі</a>
+                <a href="products/impact_wrenches.html">Гайковерти</a>
+                <a href="products/perforators.html">Перфоратори</a>
+                <a href="products/angle_grinders.html">Болгарки</a>
+            </div>
+        </section>
 
-  <section class="products">
-    <div class="product">
-      <h2>Популярні товари</h2>
-      <ul>
-        <li><a href="shurupovert.html">Шуруповерт CAT DX11</a></li>
-        <li><a href="perforator.html">Перфоратор CAT RH350</a></li>
-      </ul>
-    </div>
-  </section>
+        <section id="top-sales">
+            <h2>Топ продажів</h2>
+            <div class="product">
+                <img src="assets/images/product1.jpg" alt="Інструмент 1">
+                <p>Шуруповерт X - 1200 грн</p>
+                <button class="buy-btn">Купити</button>
+            </div>
+            <div class="product">
+                <img src="assets/images/product2.jpg" alt="Інструмент 2">
+                <p>Перфоратор Y - 2500 грн</p>
+                <button class="buy-btn">Купити</button>
+            </div>
+        </section>
+    </main>
 
-  <section id="dostavka" class="products">
-    <div class="product">
-      <h2>Доставка і оплата</h2>
-      <p>Доставка по всій Україні. Оплата при отриманні або онлайн.</p>
-    </div>
-  </section>
-
-  <section id="kontakty" class="products">
-    <div class="product">
-      <h2>Контакти</h2>
-      <p>Телефон: +380 (67) 123-45-67</p>
-      <p>Email: info@cat-tools.com.ua</p>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>&copy; 2025 CAT Tools. Усі права захищено.</p>
-  </footer>
+    <footer id="contact">
+        <p>© 2025 PowerBit | Контакти: example@email.com</p>
+    </footer>
 </body>
 </html>
