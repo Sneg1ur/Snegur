@@ -36,8 +36,9 @@ nav ul li a {
 
 .banner img {
     width: 100%;
-    height: 200px; /* Або інший розмір, якщо потрібно */
+    height: 500px; /* Спробуй трохи збільшити */
     object-fit: cover;
+    display: block;
 }
 
 .banner-text {
