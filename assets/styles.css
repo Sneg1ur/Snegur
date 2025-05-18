@@ -32,7 +32,7 @@ nav ul li a {
 .banner {
     position: relative;
     width: 100%;
-    height: 500px; /* Спробуємо цю висоту */
+    height: 300px; /* Спробуємо цю висоту */
     overflow: hidden;
 }
 
